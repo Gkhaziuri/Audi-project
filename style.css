@@ -16,6 +16,7 @@ body {
 .nav-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .nav-header a {
     text-decoration: none;
@@ -110,6 +111,42 @@ body {
     width: 100%;
     position: relative;
 
+}
+
+
+
+
+
+
+.other-pages {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px;
+    align-items: center;
+}
+.join-fb-page img{
+    margin-right: 70px;
+    position: relative;
+}
+.join-fb-page p {
+    position: absolute;
+    font-size: 20px;
+    max-width: 270px;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+.other-pages p:hover {
+    color: #c03;
+}
+.models-avant {
+    display: flex;
+    flex-direction: column;
+}
+.models-avant img {
+    margin-bottom: 35px;
 }
 
 
