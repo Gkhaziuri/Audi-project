@@ -1,0 +1,134 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hello{
+
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+#main-id {
+    justify-content: center;
+    background-color: grey;
+    font-family: Verdana, sans-serif;
+    justify-content:center;
+
+}
+#modal-container{
+    background-color: aqua;
+    width: 100%;
+    z-index: 99999;
+    opacity: 0.3;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#modal {
+    background-color: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding:0 50px;
+    width: 60%;
+    height: 110vh;
+    border: 1px solid black;
+    display: block;
+    animation: fadeInModal 1s ease-in-out forwards;
+    position: relative;
+}
+
+#modal.closing{
+    animation: fadeOutModal 1s ease-in-out forwards;  
+
+}
+@keyframes fadeInModal{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOutModal{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+#header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 50px; */
+    width: 100%;
+}
+#news-form {
+    display: flex;
+    flex-direction: column;
+}
+#x-button {
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+#personal-info {
+    font-size: 22px;
+    margin: 30px 0;
+    font-weight: 500;
+}
+/* #news-form {
+    height: 110%;
+} */
+#news-form input{
+    line-height: 30px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d0d3d4;
+}
+#dates-container {
+    margin-bottom: 15px;
+}
+.form-select {
+    height: 30px;
+    border: 1px solid #d0d3d4;
+    color: grey;
+    padding: 0 10px;
+}
+#subscribe-button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+#checkboxes p{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0
+}
+#checkboxes span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.white-arrow {
+    fill: #fff;
+    margin-left: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+
+
