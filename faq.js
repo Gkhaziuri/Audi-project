@@ -20,14 +20,14 @@ document.getElementById("news-form").addEventListener("submit", function(event) 
     
 
 
-    // firstCheckboxYes.addEventListener("click", function(){
-    //     firstCheckboxYes.checked = true;
-    //     firstCheckboxNo.checked = false;
-    // })
-    // firstCheckboxNo.addEventListener("click", function(){
-    //     firstCheckboxYes.checked = false;
-    //     firstCheckboxNo.checked = true;
-    // })
+    firstCheckboxYes.addEventListener("click", function(){
+        firstCheckboxYes.checked = true;
+        firstCheckboxNo.checked = false;
+    })
+    firstCheckboxNo.addEventListener("click", function(){
+        firstCheckboxYes.checked = false;
+        firstCheckboxNo.checked = true;
+    })
 
     // 
     // secondCheckboxSecondhand.addEventListener("click", function(){
@@ -81,3 +81,7 @@ function openModal() {
     const modal = document.getElementById("modal")
     modal.style.display = "block"
 }
+
+function expandDiv(element) {
+    element.classList.toggle('expanded');
+  }

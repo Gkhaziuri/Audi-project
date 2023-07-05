@@ -12,28 +12,129 @@
 }
 #main-id {
     justify-content: center;
-    background-color: grey;
+    background-color: #fff(252, 251, 251);
     font-family: Verdana, sans-serif;
     justify-content:center;
 
 }
+.faq-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    
+}
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav-header a {
+    text-decoration: none;
+    color: black;
+}
+.burger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+.burger-icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+  }
+.burger-icon:hover span{
+    background-color: #c03;
+}
+.nav-header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.nav-header a:hover {
+    color: #c03;
+}
+.nav-header li {
+    margin-right: 30px;
+    font-size: 20px;
+}
+.menu-li:hover .burger-icon span {
+    background-color: #c03;
+}
+.menu-li a {
+    display: flex;
+    align-items: center;
+}
+.menu-li span {
+    margin-right: 50px;
+}
+.burger-menu {
+    background-color: white;
+    border: 1px solid black;
+    display: none;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.burger-menu-hover {
+    display: flex;
+    flex-direction: column;
+}
+.burger-menu-row{
+    /* display: none; */
+}
+.logo-div img{
+    width: 300px;
+}
+.rs-li a{
+    display: flex;
+    align-items: center;
+}
+.red-arrow {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    fill: #c03;
+}
+.questions {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.questions:hover {
+    color: #c03;
+}
+.questions {
+    height: 30px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+  
+.questions.expanded {
+    height: auto;
+}
+
 #modal-container{
-    background-color: aqua;
+    background-color: #fff;
     width: 100%;
     z-index: 99999;
-    opacity: 0.3;
+    opacity: 1;
     justify-content: center;
     display: flex;
     align-items: center;
-    position: relative;
+    position: absolute;
 }
 #modal {
     background-color: white;
-    /* display: flex; */
-    /* flex-direction: column; */
-    padding:0 50px;
+    padding: 20px 50px;
     width: 60%;
-    height: 110vh;
+    height: 100%;
     border: 1px solid black;
     display: block;
     animation: fadeInModal 1s ease-in-out forwards;
@@ -123,6 +224,7 @@
     font-size: 18px;
     font-weight: 500;
 }
+
 .white-arrow {
     fill: #fff;
     margin-left: 10px;

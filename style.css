@@ -153,16 +153,6 @@ body {
 .double-arrow {
     margin-left: 7px;
 } 
-/* .select-car {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 20em;
-    height: 3em;
-    line-height: 3;
-    overflow: hidden; 
-     background: #fff;
-}  */
 .model-selection {
     display: flex;
     flex-direction: column;
@@ -187,14 +177,6 @@ body {
     fill: #fff;
     margin-left: 10px;
 }
-/* select {
-    flex: 1;
-    padding: 0 .5em;
-    color: #000;
-    font-size: 20px;
-    cursor: pointer;
-    
-} */
 select {
     background: #fff;
     flex: 1;
@@ -212,14 +194,6 @@ select {
     height: 3em;
     background: #fff;
 }
-
-
-
-
-
-
-
-
 .other-pages {
     display: flex;
     justify-content: center;

@@ -4,15 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="faq.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Document</title>
 </head>
 <body id="main-id">
     
-      
-    
-<h1 id="hello">hello</h1> 
-<div id="modal-container">
+<div class="faq-container">
+    <header class="nav-header">
+        <nav>
+            <ul>
+                <li class="menu-li">
+                    <a href="">
+                        <div class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>მენიუ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">A3</a>
+                </li>
+                <li>
+                    <a href="">S5</a>
+                </li>
+                <li>
+                    <a href="">A7</a>
+                </li>
+                <li>
+                    <a href="">Q8</a>
+                </li>
+                <li class="rs-li">
+                    <a href="">
+                        <img src="images/rs-logo.png" alt="RS7 logo">
+                        RS</a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/search-logo.png" alt="search icon">
+                        <span>ძიება</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-div">
+            <a href="https://www.audi.ge/geo">
+                <img src="images/audi-logo.jpg" alt="Audi logo">
+            </a>
+        </div>
+    </header>
+    <section class="faqs">
+        <h2>ხშირად დასმული კითხვები</h2>
+        <div class="questions" onclick="expandDiv(this)">
+            <svg class="red-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z"/></svg>                                
+            <p>რა საგარანტიო პირობები ვრცელდება აუდის მოდელებზე?</p>
+            <p></p>
+        </div>
+    </section>
+</div>
 
+
+<div id="modal-container">
+    <h1 id="hello">hello</h1> 
     <div id="modal" class="modal">
         <div id="header-div">
             <h1>გამოიწერეთ სიახლეები</h1>
