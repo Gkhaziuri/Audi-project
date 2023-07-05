@@ -57,21 +57,23 @@
         <div class="questions" onclick="expandDiv(this)">
             <svg class="red-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z"/></svg>                                
             <p>რა საგარანტიო პირობები ვრცელდება აუდის მოდელებზე?</p>
-            <p></p>
+            <!-- <p>აუდის ოფიციალური სალონში შეძენილ ყველა მოდელზე ცენტრი სტანდარტულად გთავაზობთ ორ წლიან საგარანტიო მომსახურებას გარბენის შეზღუდვის გარეშე.
+
+                სურვილის შემთხვევაში შესაძლოებელია გახანგრძლივებული გარანტიის მიღება: 5 წელი ან 150 000 კმ გარბენი. ფასი 5 წლიან გარანტიაზე განსხვავებულია და განისაზღვრება მოდელის მიხედვით.
+                
+                საგარანტიო შეზღუდვა ვრცელდება ავტონაწილთა იმ კატეგორიაზე, რომლიც განიცდის ბუნებრივ ცვეთას.</p> -->
         </div>
     </section>
 </div>
 
 
 <div id="modal-container">
-    <h1 id="hello">hello</h1> 
     <div id="modal" class="modal">
         <div id="header-div">
             <h1>გამოიწერეთ სიახლეები</h1>
             <button onclick="closeModal()" id="x-button">X</button>  
-            
         </div>
-        <span id="personal-info">პერსონალური ინფორმაცია</span>
+        <span class="personal-info">პერსონალური ინფორმაცია</span>
         <form id="news-form">
             <input id="first-name" type="text" placeholder="სახელი">
             
@@ -168,37 +170,37 @@
             <div id="checkboxes">
                 <p>მოგწონთ თუ არა ჩვენი ვებ გვერდი?</p>
                 <div>
-                    <input id="first-checkbox-yes" type="checkbox">
+                    <input id="first-checkboxs" type="radio" name="review">
                     <span>კი</span>
                 </div>
                 <div>
-                    <input id="first-checkbox-no" type="checkbox">
+                    <input id="first-checkbox" type="radio" name="review">
                     <span>არა</span>
                 </div>
                 <p>ხართ თუ არა აუდის მფლობელი?</p>
                 <div>
-                    <input id="second-checkbox-secondhand" type="checkbox">
+                    <input id="second-checkbox" type="radio" name="if-owner">
                     <span>კი, მე მყავს მეორადი აუდი</span>
                 </div>
                 <div>
-                    <input id="second-checkbox-new" type="checkbox">
+                    <input id="second-checkbox" type="radio" name="if-owner">
                     <span>კი, მე მყავს ცენტრიდან გამოყვანილი აუდი</span>
                 </div>
                 <div>
-                    <input id="second-checkbox-no" type="checkbox">
+                    <input id="second-checkbox" type="radio" name="if-owner">
                     <span>არა</span>
                 </div>
                 <p>რა სახის სიახლეების მიღება გსურთ?</p>
                 <div>
-                    <input id="third-checkbox-about-service" type="checkbox">
-                    <span>ავტოსერვისი შესახებ</span>
+                    <input id="third-checkbox" type="radio" name="news-type">
+                    <span>ავტოსერვისის შესახებ</span>
                 </div>
                 <div>
-                    <input id="third-checkbox-about-cars" type="checkbox">
+                    <input id="third-checkbox" type="radio" name="news-type">
                     <span>ავტომობილების შესახებ</span>
                 </div>
                 <div>
-                    <input id="third-checkbox-about-brand" type="checkbox">
+                    <input id="third-checkbox" type="radio" name="news-type">
                     <span>ბრენდის შესახებ</span>
                 </div>
                 
@@ -212,7 +214,7 @@
         </form>
 
     </div>
-    </div>
+</div>
 
 
 

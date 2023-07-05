@@ -1,8 +1,8 @@
 const swiper = new Swiper('.swiper', {
-    // // autoplay: {
-    //    delay: 3000, 
-    //    disableOnInteraction: false,
-    // },
+    autoplay: {
+       delay: 3000, 
+       disableOnInteraction: false,
+    },
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -12,5 +12,6 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  effect: "fade",
 });
 
