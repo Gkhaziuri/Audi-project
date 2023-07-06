@@ -6,7 +6,6 @@
 }
 body {
     font-family: Verdana, sans-serif;
-    /* font-family: sans-serif; */
 }
 .container {
     width: 80%;
@@ -401,7 +400,7 @@ footer {
     width: 1px;
     background-color: rgb(155, 150, 150);
 }
-.last-footer-boxes {
+.last-footer-box {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -410,9 +409,11 @@ footer {
 .social-network-pages {
     padding: 20px 50px;
     text-align: right;
+
 }
 .social-network-pages img {
     margin-right: 20px;
+    height: 40px;
 }
 .social-network-pages img:last-child {
     margin-right: 0;

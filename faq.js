@@ -24,11 +24,20 @@ document.getElementById("news-form").addEventListener("submit", function(event) 
     let month = document.getElementById("month").value
     let day = document.getElementById("day").value
 
-    // clean up
-    document.getElementById("first-name").value = "";
-    document.getElementById("last-name").value = "";
-    document.getElementById("mail").value = "";
     console.log ("user credentials:", firstName, lastName, mail, birthDate, month, day);
+
+    let userInfo = {
+      firstName: firstName,
+      lastName: lastName,
+      mail: mail,
+      birthDate: birthDate,
+      month: month,
+      day: day
+  };
+  localStorage.setItem("userInfo", JSON.stringify(userInfo));
+
+  // Reset form inputs
+  document.getElementById("news-form").reset();
 
 });
 
