@@ -99,18 +99,15 @@
     align-items: center;
     cursor: pointer;
 }
-.questions:hover {
-    color: #c03;
-}
 .questions {
     height: 30px;
     overflow: hidden;
     transition: height 0.3s ease;
   }
   
-.questions.expanded {
+/* .questions.expanded {
     height: auto;
-}
+} */
 
 #modal-container{
     background-color: rgba(0,0,0,0.3);
@@ -234,4 +231,92 @@
 }
 .faqs h2 {
     margin-bottom: 20px;
+}
+.questions {
+    min-height: 150px;
+}
+.questions  {
+    padding-bottom: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items:flex-start;
+}
+.each-question:hover {
+    color: #c03;
+}
+.answer {
+    /* margin-top: 10px;
+    border-top: 1px solid #989494; */
+    font-size: 15px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .lower-footer-info {
+    background-color: #474e5b;
+    margin: 0 auto;
+}
+.lower-footer {
+    background-color: #474e5b;
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lower-footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    max-width: 140px;
+    text-align: center;
+    height: 115px;
+}
+.lower-footer a:hover {
+    color: #d8dbe1;
+}
+.lower-footer-boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.lower-footer-boxes::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50%;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(155, 150, 150);
+}
+.last-footer-boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.social-network-pages {
+    padding: 20px 50px;
+    text-align: right;
+}
+.social-network-pages img {
+    margin-right: 20px;
+}
+.social-network-pages img:last-child {
+    margin-right: 0;
+  }
+.creator {
+    border-top: 1px solid #474747;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: #fff;
 }

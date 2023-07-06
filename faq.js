@@ -28,4 +28,26 @@ function openModal() {
     modal.style.display = "block"
 }
 
+// function toggleAnswer(question) {
+//     const answer = question.querySelector('.answer');
+//     const height = answer.scrollHeight;
+  
+//     if (answer.style.height === '0px') {
+//       answer.style.height = height + 'px';
+//     } else {
+//       answer.style.height = '0px';
+//     }
+//   }
 
+function toggleAnswer(question) {
+    const answer = question.querySelector('.answer');
+    const height = answer.scrollHeight;
+  
+    if (answer.style.height === '0px') {
+      answer.style.height = height + 'px';
+      question.classList.add('show');
+    } else {
+      answer.style.height = '0px';
+      question.classList.remove('show');
+    }
+  }
