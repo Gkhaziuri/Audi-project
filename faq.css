@@ -7,7 +7,7 @@
 #main-id {
     justify-content: center;
     background-color: #fff(252, 251, 251);
-    font-family: Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content:center;
 }
 .faq-container {
@@ -78,9 +78,6 @@
     display: flex;
     flex-direction: column;
 }
-.burger-menu-row{
-    /* display: none; */
-}
 .logo-div img{
     width: 300px;
 }
@@ -89,8 +86,8 @@
     align-items: center;
 }
 .red-arrow {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     margin-right: 5px;
     fill: #c03;
 }
@@ -104,15 +101,10 @@
     overflow: hidden;
     transition: height 0.3s ease;
   }
-  
-/* .questions.expanded {
-    height: auto;
-} */
-
 #modal-container{
     background-color: rgba(0,0,0,0.3);
     width: 100%;
-    z-index: 99999;
+    z-index: 10;
     opacity: 1;
     justify-content: center;
     display: flex;
@@ -137,7 +129,10 @@
 
 #modal.closing{
     animation: fadeOutModal 1s ease-in-out forwards;  
-
+}
+#error {
+    font-size: 25px;
+    font-weight: 700;
 }
 @keyframes fadeInModal{
     0%{
@@ -145,17 +140,9 @@
     }
     100%{
         opacity: 1;
+        transition: 0.3s ease ;
     }
 }
-@keyframes fadeOutModal{
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-
 #header-div {
     display: flex;
     align-items: center;
@@ -227,37 +214,40 @@
 }
 .faqs {
     margin-top: 100px;
-    
+    padding-bottom: 150px;
 }
 .faqs h2 {
     margin-bottom: 20px;
 }
 .questions {
-    min-height: 150px;
-}
-.questions  {
-    padding-bottom: 0px;
-    font-size: 18px;
-    font-weight: 700;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    align-items:flex-start;
 }
-.each-question:hover {
-    color: #c03;
-}
-.answer {
-    /* margin-top: 10px;
-    border-top: 1px solid #989494; */
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
     font-size: 15px;
-    height: 0;
+    transition: 0.4s;
+    font-size: 18px;
+    font-weight: 700;
+}
+.active, .accordion:hover {
+    background-color: #ccc; 
+  } 
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
     overflow: hidden;
-    transition: height 0.3s ease;
   }
-
-  .lower-footer-info {
+.lower-footer-info {
     background-color: #474e5b;
     margin: 0 auto;
 }

@@ -1,3 +1,18 @@
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
 document.getElementById("news-form").addEventListener("submit", function(event) {
     event.preventDefault();
     
@@ -28,26 +43,41 @@ function openModal() {
     modal.style.display = "block"
 }
 
-// function toggleAnswer(question) {
-//     const answer = question.querySelector('.answer');
-//     const height = answer.scrollHeight;
+function validationForm() {
+  var firstName = document.forms ["news-form"]["first-name"].value
+  var lastName = document.forms ["news-form"]["last-name"].value
+  var email = document.forms ["news-form"]["mail"].value
+  const error = document.getElementById("error");
+  const submit = document.createElement("message")
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  error.style.color = "#c03"
   
-//     if (answer.style.height === '0px') {
-//       answer.style.height = height + 'px';
-//     } else {
-//       answer.style.height = '0px';
-//     }
-//   }
 
-function toggleAnswer(question) {
-    const answer = question.querySelector('.answer');
-    const height = answer.scrollHeight;
-  
-    if (answer.style.height === '0px') {
-      answer.style.height = height + 'px';
-      question.classList.add('show');
-    } else {
-      answer.style.height = '0px';
-      question.classList.remove('show');
-    }
-  }
+if (firstName == "") {
+  error.textContent = "შეიყვანეთ სახელი!"
+  return false;
+} 
+if (lastName == "") {
+  error.textContent = "შეიყვანეთ გვარი!"
+  return false;
+}
+if (email == "") {
+  error.textContent = "შეიყვანეთ მეილი!"
+  return false;
+} 
+ if (!email.match(emailRegex)) {
+  error.textContent = "შეიყვანეთ ვალიდური მეილი!"
+  return false;
+ }
+ else {
+  error.textContent = "წარმატებით გაიგზავნა!"
+  error.style.color = "green"
+  setTimeout(closeModal, 3000)
+ }
+
+return true
+
+
+
+}
+
