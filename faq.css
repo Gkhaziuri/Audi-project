@@ -298,6 +298,8 @@
 }
 .social-network-pages img {
     margin-right: 20px;
+    height: 40px;
+    width: 40px;
 }
 .social-network-pages img:last-child {
     margin-right: 0;

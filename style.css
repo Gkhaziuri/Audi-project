@@ -35,7 +35,7 @@ body {
     width: 100%;
     height: 4px;
     background-color: black;
-    border-radius: 2px;
+    border-radius: 5px;
   }
 .burger-icon:hover span{
     background-color: #c03;
@@ -78,21 +78,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-/* .burger-hover-content-block {
-    display: none;
-    background-color: #474e5b;
-    min-height: 500px;
-    min-width: 500px
-}
-.menu-li a:hover {
-    display: block;
-    background-color: #fff;
-    min-height: 500px;
-    min-width: 500px;
-    position: absolute;
-    z-index: 10;
-} */
 .menu-li:hover .burger-icon-hover-block {
     display: block;
 }
@@ -108,10 +93,8 @@ body {
     z-index: 10;
     display: flex;
     flex-direction: column;
-  }
-
-  
-  .burger-icon-hover-block ul {
+}
+.burger-icon-hover-block ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -128,10 +111,8 @@ body {
 .burger-icon-hover-block ul li a {
     text-decoration: none;
     color: #333;
-  }
-  
-
-
+}
+ 
 .logo-div img{
     width: 300px;
 }
@@ -158,22 +139,20 @@ body {
     width: 100%;
     position: relative;
 }
- .swiper-slide h2 {
+.swiper-slide h2 {
     padding: 10px;
-    font-size: 35px;
+    font-size: 45px;
     position: absolute;
-    background-color: white;
-    border: 1px solid white;
+    color: #fff;
     left: 50px;
     top: 50px;
     z-index: 10;
 }
 .swiper-slide h3 {
     padding: 10px;
-    font-size: 30px;
+    font-size: 35px;
     position: absolute;
-    background-color: white;
-    border: 1px solid white;
+    color: #fff;
     left: 50px;
     top: 150px;
     z-index: 10;
@@ -269,7 +248,7 @@ select {
     position: absolute;
     font-size: 22px;
     max-width: 580px;
-    color: #000;
+    color: #fff;
     top: 20%;
     left: 38%;
     transform: translate(-50%, -50%);
@@ -289,7 +268,7 @@ select {
 .all-models-page h3 {
     position: absolute;
     font-size: 20px;
-    color: #000;
+    color: #fff;
     top: 12%;
     left: 28%;
     transform: translate(-50%, -50%);
@@ -301,7 +280,7 @@ select {
 .a6-avant-page h3 {
     position: absolute;
     font-size: 20px;
-    color: #000;
+    color: #fff;
     top: 18%;
     left: 38%;
     transform: translate(-50%, -50%);
