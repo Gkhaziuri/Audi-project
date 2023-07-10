@@ -86,17 +86,19 @@ body {
     width: 100%;
     display: flex;
     position: relative;
+    height: 500px;
 }
 .swiper-slide img { 
     width: 100%;
-    position: relative;
-    max-height: 500px;
     height: 100%;
+    object-fit: cover;
 }
 .swiper-slide h2 {
     padding: 10px;
     font-size: 35px;
     position: absolute;
+    /* background-color: white;
+    border: 1px solid white; */
     color: #fff;
     left: 50px;
     top: 50px;

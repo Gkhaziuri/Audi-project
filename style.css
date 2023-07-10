@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Verdana, sans-serif;
+    font-family: "firago";
 }
 .container {
     width: 80%;
@@ -79,11 +79,11 @@ body {
     flex-direction: column;
 }
 .menu-li:hover .burger-icon-hover-block {
-    display: block;
+    display: flex;
 }
   
 .burger-icon-hover-block {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -91,7 +91,6 @@ body {
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     z-index: 10;
-    display: flex;
     flex-direction: column;
 }
 .burger-icon-hover-block ul {
