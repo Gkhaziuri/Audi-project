@@ -223,7 +223,25 @@ video {
     font-size: 18px;
     line-height: 1.5rem;
 }
-
+.conf-button {
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    max-width: 300px;
+    text-align: center;
+}
+.conf-button a {
+    text-decoration: none;
+    color: #fff;
+}
+.conf-button a:hover {
+    color: #c03;
+    transition: 0.3s;
+}
 /* footer */
 .lower-footer-info {
     background-color: #474e5b;
