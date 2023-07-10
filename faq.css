@@ -244,9 +244,12 @@
   } 
 .panel {
     padding: 0 18px;
-    display: none;
+
     background-color: white;
     overflow: hidden;
+
+    height: 0px;
+    transition: all 0.3s linear;
   }
 .lower-footer-info {
     background-color: #474e5b;

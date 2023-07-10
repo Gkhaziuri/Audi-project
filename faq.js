@@ -5,10 +5,12 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    if (panel.style.height === "100px") {
+      panel.style.height = "0px";
+
     } else {
-      panel.style.display = "block";
+      panel.style.height = "100px"
+ 
     }
   });
 }
@@ -62,15 +64,15 @@ function validationForm() {
   error.style.color = "#c03"
   
 
-if (firstName == "") {
+if (firstName === "") {
   error.textContent = "შეიყვანეთ სახელი!"
   return false;
 } 
-if (lastName == "") {
+if (lastName === "") {
   error.textContent = "შეიყვანეთ გვარი!"
   return false;
 }
-if (email == "") {
+if (email === "") {
   error.textContent = "შეიყვანეთ მეილი!"
   return false;
 } 
