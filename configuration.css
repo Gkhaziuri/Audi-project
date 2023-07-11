@@ -265,13 +265,10 @@ th {
     max-width: 1000px;
     line-height: 30px;
 }
-.lights-div {
-   
-
-}
 .lights-div h5 {
     margin-top: 50px;
-    font-size: 1.2rem}
+    font-size: 1.2rem;
+}
 .light-block {
     display: flex;
 }

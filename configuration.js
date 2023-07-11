@@ -69,6 +69,7 @@ images.forEach((imagePath) => {
   imageContainer.style.width = ("100px")
   imageContainer.style.display = ("flex")
   imageContainer.style.cursor = ("pointer")
+  imageContainer.style.marginRight = ("15px")
 
   const imageElement = document.createElement("img");
   imageElement.src = imagePath;
