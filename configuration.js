@@ -15,38 +15,7 @@ const swiper = new Swiper('.swiper', {
   effect: "fade",
 });
 
-
-// fetch ("photos.json")
-// .then (Response => Response.json())
-// .then (data => {
-//   const colorBoxes = document.getElementById("colors");
-//   let selectedBox = null;
-
-//   data.forEach(colorObject => {
-//     const box = document.createElement("button");
-//     box.style.backgroundColor = colorObject.color;
-//     box.classList.add("colors");
-
-//     box.addEventListener("click", () => {
-//       if (selectedBox) {
-//         selectedBox.classList.remove("selected");
-//       }
-
-//       selectedBox = box;
-//       box.classList.add("selected");
-//     });
-//     colorBoxes.appendChild(box);
-//   });
-
-//   document.getElementById("submit-button").addEventListener("click", () => {
-//     if (selectedBox) {
-//       const colorName = selectedBox.style.backgroundColor;
-//       console.log(colorName)
-//     }
-//   });
-// })
-// .catch(error => console.error("error fetching data", error));
-
+// color images API
 fetch('photos.json')
       .then(response => response.json())
       .then(data => {
@@ -62,7 +31,8 @@ fetch('photos.json')
           image.addEventListener('click', () => {
             if (selectedImage) {
               selectedImage.classList.remove('selected');
-            }
+              selectedImage.style.border = ("5px solid #c03")
+            } 
 
             selectedImage = image;
             image.classList.add('selected');
@@ -71,7 +41,6 @@ fetch('photos.json')
           imageContainer.appendChild(image);
         });
     
-        // Event listener for the submit button
         document.getElementById('submit-button').addEventListener('click', () => {
           if (selectedImage) {
             const imageUrl = selectedImage.src;
@@ -81,6 +50,8 @@ fetch('photos.json')
       })
       .catch(error => console.error('Error fetching images.json:', error));
 
+
+// tyre images
 const images = [
   "images/1tyre-img.jpeg",
   "images/2tyre-img.jpeg",
@@ -97,7 +68,7 @@ images.forEach((imagePath) => {
   imageContainer.classList.add("image");
   imageContainer.style.width = ("100px")
   imageContainer.style.display = ("flex")
-  
+  imageContainer.style.cursor = ("pointer")
 
   const imageElement = document.createElement("img");
   imageElement.src = imagePath;
