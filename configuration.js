@@ -41,12 +41,6 @@ fetch('photos.json')
           imageContainer.appendChild(image);
         });
     
-        document.getElementById('submit-button').addEventListener('click', () => {
-          if (selectedImage) {
-            const imageUrl = selectedImage.src;
-            console.log(imageUrl);
-          }
-        });
       })
       .catch(error => console.error('Error fetching images.json:', error));
 
@@ -79,3 +73,12 @@ images.forEach((imagePath) => {
   imageGallery.appendChild(imageContainer);
 });
 
+// menu hover
+function scrollToSection(sectionId) {
+  const hoverBlock = document.querySelector(".burger-icon-hover-block")
+  window.scrollTo ({
+  
+    behavior: "smooth",
+  });
+  hoverBlock.style.display = "none"
+}

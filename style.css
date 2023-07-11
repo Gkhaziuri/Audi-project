@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid; */
 }
 body {
     font-family: "firago";
@@ -334,13 +333,6 @@ footer {
     flex-direction: column;
     position: relative;
 }
-.last-footer-box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    flex-wrap: wrap;
-}
 .social-network-pages {
     padding: 20px 50px;
     text-align: right;
@@ -435,11 +427,7 @@ footer {
         font-size: 15px;
     }
     .join-fb-page {
-        margin-right: 20px;
-        
-    }
-    .join-fb-page img {
-        /* width: 272px; */
+        margin-right: 20px;  
     }
     .other-pages {
         flex-wrap: wrap;

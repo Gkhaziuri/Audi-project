@@ -105,7 +105,7 @@ body {
     fill: #c03;
 }
 .logo-div img{
-    width: 300px;
+    width: 100px;
 }
 .rs-li a{
     display: flex;
@@ -284,15 +284,7 @@ video {
     flex-direction: column;
     position: relative;
 }
-.lower-footer-boxes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -50%;
-    height: 100%;
-    width: 1px;
-    background-color: rgb(155, 150, 150);
-}
+
 .last-footer-box {
     display: flex;
     align-items: center;
@@ -316,4 +308,19 @@ video {
     justify-content: space-between;
     padding: 20px 50px;
     color: #fff;
+}
+@media screen and (max-width:1240px) { 
+    .nav-header li:not(:first-child) {
+        display: none;
+    }
+    .slider-wrapper h2 {
+        font-size: 22px;
+        top: 120px;
+    }
+    .swiper-slide h3 {
+        bottom: 80px;
+    }
+    .slider-wrapper a {
+        display: none;
+    }
 }

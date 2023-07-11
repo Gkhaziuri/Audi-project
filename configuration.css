@@ -8,9 +8,9 @@ body {
     font-family: "firago";
 }
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%;
 }
 .nav-header {
     display: flex;
@@ -105,7 +105,7 @@ body {
     fill: #c03;
 }
 .logo-div img{
-    width: 300px;
+    width: 100px;
 }
 .rs-li a{
     display: flex;
@@ -149,9 +149,8 @@ body {
     height: 30px;  
 }
 .configuration-options {
-    margin-left: 175px;
+    justify-content: center;
     display: flex;
-    position: sticky;
 }
 .configuration-options ul {
     display: flex;
@@ -256,7 +255,9 @@ th {
     align-items: top;
     max-width: 1000px;
     line-height: 30px;
+    flex-wrap: wrap;
 }
+
 .lights-div h5 {
     margin-top: 50px;
     font-size: 1.2rem;
@@ -272,7 +273,7 @@ th {
     max-width: 200px;
 }
 /* footer */
-.lower-footer-info {
+#lower-footer-info {
     background-color: #474e5b;
     margin: 0 auto;
 }
@@ -283,7 +284,6 @@ th {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 .lower-footer a {
     text-decoration: none;
@@ -297,21 +297,6 @@ th {
     color: #d8dbe1;
 }
 .lower-footer-boxes {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-.lower-footer-boxes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -50%;
-    height: 100%;
-    width: 1px;
-    background-color: rgb(155, 150, 150);
-}
-.last-footer-box {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -337,4 +322,33 @@ th {
     justify-content: space-between;
     padding: 20px 50px;
     color: #fff;
+}
+@media screen and (max-width:1240px) { 
+    .nav-header li:not(:first-child) {
+        display: none;
+    }
+    .engine-table img {
+        display: none;
+    }
+}
+@media screen and (max-width: 715px) {
+    .engine-characteristics {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 495px) {
+    .light-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .swiper h3 {
+        top: 5%;
+        left: 10%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:448px) {
+    .lower-footer {
+        justify-content: center;
+    }
 }
