@@ -66,55 +66,33 @@ body {
 .menu-li span {
     margin-right: 50px;
 }
-.burger-menu {
-    background-color: white;
-    border: 1px solid black;
-    display: none;
-    width: 100%;
-    flex-direction: column;
+
+/* :hover */
+.main-li {
+    font-weight: 700;
 }
-.burger-menu-hover {
-    display: flex;
-    flex-direction: column;
-}
-.menu-li:hover .burger-icon-hover-block {
-    display: flex;
-}
-  
 .burger-icon-hover-block {
-    display: flex;
-    align-items: top;
-    justify-content: space-around;
+    display: none;
+    justify-content: flex-start;
     position: absolute;
-    top: 100%;
-    left: 0;
     background-color: #fff;
-    padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     z-index: 10;
-    min-width: 700px;
+    min-width: 480px;
+    padding: 25px;
 }
 .burger-icon-hover-block ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.burger-hover-content-block {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.burger-hover-content-block ul {
-    display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    align-items: flex-start;   
 }
 .burger-icon-hover-block ul li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
-.burger-icon-hover-block ul li a {
-    text-decoration: none;
-    color: #333;
+.menu-li:hover .burger-icon-hover-block {
+    display: block;
 }
+
 .logo-div img{
     width: 300px;
 }
@@ -129,7 +107,6 @@ body {
     width: 100%;
     display: flex;
     position: relative;
-
 }
 .swiper-button-next, .swiper-button-prev {
     color: #fff !important;
@@ -211,6 +188,7 @@ body {
 .white-arrow {
     fill: #fff;
     margin-left: 10px;
+    width: 12px;
 }
 select {
     background: #fff;
@@ -237,6 +215,7 @@ select {
 }
 .other-pages h3:hover {
     color: #c03;
+    transition: 0.1s linear;
 }
 .join-fb-page {
     position: relative;
@@ -256,11 +235,11 @@ select {
     transform: translate(-50%, -50%);
     font-weight: 700;
 }
-.models-avant {
+.models-quattro {
     display: flex;
     flex-direction: column;
 }
-.models-avant img {
+.models-quattro img {
     width: 100%;
     margin-bottom: 25px;
 }
@@ -276,36 +255,19 @@ select {
     transform: translate(-50%, -50%);
     font-weight: 700;
 }
-.a6-avant-page {
+.quattro-page {
     position: relative;
 }
-.a6-avant-page h3 {
+.quattro-page h3 {
     position: absolute;
     font-size: 20px;
     color: #fff;
     top: 18%;
-    left: 38%;
+    left: 22%;
     transform: translate(-50%, -50%);
     font-weight: 700;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     margin: 0 auto;
     width: 100%;
