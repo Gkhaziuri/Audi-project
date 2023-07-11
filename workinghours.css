@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Verdana, sans-serif;
+    font-family: "firago";
 }
-
 .workinghours-container {
     width: 80%;
     margin: 0 auto;
