@@ -284,6 +284,7 @@ footer {
     display: flex;
     align-items: top;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-right: 50px;
 }
 .footer-rows a {
@@ -332,20 +333,12 @@ footer {
     flex-direction: column;
     position: relative;
 }
-.lower-footer-boxes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -50%;
-    height: 100%;
-    width: 1px;
-    background-color: rgb(155, 150, 150);
-}
 .last-footer-box {
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
+    flex-wrap: wrap;
 }
 .social-network-pages {
     padding: 20px 50px;
@@ -358,7 +351,7 @@ footer {
 }
 .social-network-pages img:last-child {
     margin-right: 0;
-  }
+}
 .creator {
     border-top: 1px solid #474747;
     width: 100%;
@@ -367,4 +360,51 @@ footer {
     justify-content: space-between;
     padding: 20px 50px;
     color: #fff;
+}
+@media screen and (max-width:1240px) { 
+    .nav-header li:not(:first-child) {
+        display: none;
+    }
+    .slider-wrapper h2 {
+        font-size: 22px;
+        top: 120px;
+    }
+    .swiper-slide h3 {
+        bottom: 80px;
+    }
+    .slider-wrapper a {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px){
+    .join-fb-page h3 {
+        font-size: 15px;
+        top: 70px;
+    }
+    .models-quattro h3 {
+        font-size: 15px;
+        top: 15px;
+        left: 70px;
+    }
+    .lower-footer > div {
+        padding: 20px
+    }
+    .footer-rows div {
+        padding: 20px 40px;
+    } 
+    .footer-rows {
+        justify-content: space-between;
+        gap: 30px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 660px) {
+    .swiper-slide h3 {
+        bottom: 500px;
+    }
+    .slider-wrapper h2 {
+        font-size: 22px;
+        bottom: 120px;
+    }
+    
 }
