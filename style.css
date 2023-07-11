@@ -3,14 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid; */
 }
 body {
     font-family: "firago";
 }
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%;
 }
 .nav-header {
     display: flex;
@@ -94,7 +95,7 @@ body {
 }
 
 .logo-div img{
-    width: 300px;
+    width: 100px;
 }
 .rs-li a{
     display: flex;
@@ -279,7 +280,7 @@ footer {
     margin-right: 5px;
     fill: #c03;
 }
-.footer-rows {
+#footer-rows {
     padding: 5% 10%;
     display: flex;
     align-items: top;
@@ -287,17 +288,17 @@ footer {
     flex-wrap: wrap;
     margin-right: 50px;
 }
-.footer-rows a {
+#footer-rows a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
     font-size: 16px;
 }
-.footer-rows a:hover {
+#footer-rows a:hover {
     color: #c03;
 }
-.footer-rows li {
+#footer-rows li {
     list-style-type: none;
     margin-bottom: 15px;    
 }
@@ -401,10 +402,46 @@ footer {
 @media screen and (max-width: 660px) {
     .swiper-slide h3 {
         bottom: 500px;
+        top: 70%;
+        left: 20%;
+        font-size: 22px;
+        transform: translate(-50%, -50%);
     }
     .slider-wrapper h2 {
-        font-size: 22px;
+        top: 20%;
+        left: 55%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
         bottom: 120px;
     }
-    
+    .menu-li span {
+        margin-right: 0;
+    }
+    .select-car {
+        width: 150px;
+    } 
+}
+@media screen and (max-width:448px) {
+    .lower-footer {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:390px) {
+    .model-selection a {
+        width: 150px;
+    }
+    .model-selection h3 {
+        font-size: 15px;
+    }
+    .join-fb-page {
+        margin-right: 20px;
+        
+    }
+    .join-fb-page img {
+        /* width: 272px; */
+    }
+    .other-pages {
+        flex-wrap: wrap;
+    }
 }

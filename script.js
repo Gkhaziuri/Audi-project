@@ -16,5 +16,13 @@ const swiper = new Swiper('.swiper', {
 });
 
 // menu hover
+function scrollToSection(sectionId) {
+  const hoverBlock = document.querySelector(".burger-icon-hover-block")
+  window.scrollTo ({
+  
+    behavior: "smooth",
+  });
+  hoverBlock.style.display = "none"
+}
 
 
