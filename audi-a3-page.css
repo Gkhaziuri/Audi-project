@@ -7,9 +7,9 @@ body {
     font-family: "firago";
 }
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%;
     /* height: 100%; */
 }
 .nav-header {
@@ -113,10 +113,19 @@ body {
 }
 
 /* slider */
-.swiper {
+
+/* .swiper {
     width: 100%;
     height: fit-content;
     margin-top: 50px;
+} */
+.slider-wrapper {
+    width: 100%;
+}
+.swiper {
+    width: 100%;
+    display: flex;
+    position: relative;
 }
 .swiper-button-next, .swiper-button-prev {
     color: #fff !important;
@@ -128,6 +137,19 @@ body {
     width: 100%;
     position: relative;
 }
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #fff !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: #fff !important;
+}
+/* .swiper-slide {
+    width: 100%;
+    position: relative;
+} */
 .swiper-slide h3 {
     padding: 10px;
     font-size: 40px;
@@ -322,5 +344,58 @@ video {
     }
     .slider-wrapper a {
         display: none;
+    }
+    .grid-collage {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .a3-video {
+        display: none;
+    }
+    .a3-more-info-block img{
+        width: 280px;
+    }
+     h4 {
+        font-size: 17px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 800px) {
+     .heading-text h2 {
+        font-size: 20px;
+    }
+    .heading-text p {
+        font-size: 18px;
+    }
+    .swiper-slide h3 {
+        font-size: 22px;
+        top: 10%;
+        left: 8%;
+    }
+}
+@media screen and (max-width:448px) {
+    .lower-footer {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .a3-left-tittles-div {
+        max-width: 200px;
+    }
+    .a3-right-tittles-div {
+        max-width: 200px;
+    }
+    .other-options-boxes img {
+        width: 280px;
+    }
+    .multimedia-gallery img {
+        width: 280px;
+    }
+    .multimedia-gallery h3 {
+        font-size: 20px;
     }
 }
