@@ -111,14 +111,9 @@ body {
     display: flex;
     align-items: center;
 }
-
-/* slider */
-
-/* .swiper {
-    width: 100%;
-    height: fit-content;
-    margin-top: 50px;
-} */
+.cars-li-div {
+    display: flex;
+}
 .slider-wrapper {
     width: 100%;
 }
@@ -332,7 +327,7 @@ video {
     color: #fff;
 }
 @media screen and (max-width:1240px) { 
-    .nav-header li:not(:first-child) {
+    .cars-li-div {
         display: none;
     }
     .slider-wrapper h2 {

@@ -66,7 +66,10 @@ body {
 .menu-li span {
     margin-right: 50px;
 }
-
+.cars-li-div {
+    display: flex;
+    align-items: center;
+}
 /* :hover */
 .main-li {
     font-weight: 700;
@@ -355,7 +358,7 @@ footer {
     color: #fff;
 }
 @media screen and (max-width:1240px) { 
-    .nav-header li:not(:first-child) {
+    .cars-li-div  {
         display: none;
     }
     .slider-wrapper h2 {

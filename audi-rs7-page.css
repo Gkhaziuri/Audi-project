@@ -7,9 +7,9 @@ body {
     font-family: "firago";
 }
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%;
     /* height: 100%; */
 }
 .nav-header {
@@ -74,6 +74,9 @@ body {
     width: 100%;
     flex-direction: column;
 }
+.cars-li-div {
+    display: flex;
+}
 .main-li {
     font-weight: 700;
 }
@@ -105,7 +108,7 @@ body {
     fill: #c03;
 }
 .logo-div img{
-    width: 300px;
+    width: 100px;
 }
 .rs-li a{
     display: flex;
@@ -127,6 +130,9 @@ body {
 .swiper-slide {
     width: 100%;
     position: relative;
+}
+.swiper-slide img {
+    width: 100%;
 }
 .swiper-slide h3 {
     padding: 10px;
@@ -234,12 +240,6 @@ video {
     color: #c03;
     transition: 0.3s;
 }
-
-
-
-
-
-
 /* footer */
 .lower-footer-info {
     background-color: #474e5b;
@@ -271,25 +271,9 @@ video {
     flex-direction: column;
     position: relative;
 }
-.lower-footer-boxes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -50%;
-    height: 100%;
-    width: 1px;
-    background-color: rgb(155, 150, 150);
-}
-.last-footer-box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
 .social-network-pages {
     padding: 20px 50px;
     text-align: right;
-
 }
 .social-network-pages img {
     margin-right: 10px;
@@ -303,4 +287,85 @@ video {
     justify-content: space-between;
     padding: 20px 50px;
     color: #fff;
+}
+@media screen and (max-width:1240px) { 
+    .cars-li-div {
+        display: none;
+    }
+    .slider-wrapper h2 {
+        font-size: 22px;
+        top: 120px;
+    }
+    .swiper-slide h3 {
+        bottom: 80px;
+    }
+    .slider-wrapper a {
+        display: none;
+    }
+    .grid-collage {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .rs7-motorsound {
+        display: none;
+    }
+    .rs7-more-info-block img{
+        width: 280px;
+    }
+     h4 {
+        font-size: 17px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .heading-text h2 {
+       font-size: 18px;
+   }
+   .heading-text p {
+       font-size: 15px;
+   }
+   .swiper-slide h3 {
+       font-size: 22px;
+       top: 10%;
+       left: 8%;
+   }
+   .menu-li span {
+    margin-right: 0;
+    }
+    .rs7-more-info-block h4 {
+        font-size: 17px;
+    }
+    .rs7-more-info-block p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:448px) {
+   .lower-footer {
+       justify-content: center;
+   }
+}
+@media screen and (max-width: 400px) {
+   .rs7-left-tittles-div {
+       max-width: 200px;
+   }
+   .rs7-right-tittles-div {
+       max-width: 200px;
+   }
+   .other-options-boxes img {
+       width: 280px;
+   }
+   .multimedia-gallery img {
+       width: 280px;
+   }
+   .multimedia-gallery h3 {
+       font-size: 20px;
+   }
+   .other-options-boxes p {
+    font-size: 15px;
+    max-width: 300px;
+   }
 }

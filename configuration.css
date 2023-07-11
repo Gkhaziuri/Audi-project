@@ -114,6 +114,9 @@ body {
 .slider-wrapper {
     width: 100%;
 }
+.cars-li-div {
+    display: flex;
+}
 .swiper {
     margin-top: 50px;
     width: 100%;
@@ -324,7 +327,7 @@ th {
     color: #fff;
 }
 @media screen and (max-width:1240px) { 
-    .nav-header li:not(:first-child) {
+    .cars-li-div {
         display: none;
     }
     .engine-table img {
