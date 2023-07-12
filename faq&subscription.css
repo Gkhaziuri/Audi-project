@@ -4,13 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+#main-id {
+    justify-content: center;
+    background-color: #fff(252, 251, 251);
     font-family: "firago";
+    justify-content:center;
 }
-.quattro-container {
+.faq-container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
 }
 .nav-header {
     display: flex;
@@ -103,75 +107,177 @@ body {
 .logo-div img{
     width: 100px;
 }
-.cars-li-div {
-    display: flex;
-}
 .rs-li a{
     display: flex;
     align-items: center;
 }
-.swiper {
-    margin-top: 50px;
-    width: 100%;
+.cars-li-div {
     display: flex;
-    position: relative;
-    height: 500px;
 }
-.swiper-slide img { 
+.red-arrow {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    fill: #c03;
+}
+.questions {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.questions {
+    height: 30px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+#modal-container{
+    background-color: rgba(0,0,0,0.3);
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.swiper-slide h2 {
-    padding: 10px;
-    font-size: 35px;
-    position: absolute;
-    color: #fff;
-    left: 50px;
-    top: 50px;
     z-index: 10;
-}
-.swiper-button-next, .swiper-button-prev {
-    color: #fff !important;
-}
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    background-color: #fff !important;
-}
-.quattro-block {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    opacity: 1;
+    justify-content: center;
     display: flex;
-    align-items: top;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    max-width: 80%;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
-.quattro-info {
-    max-width: 800px;
-    font-size: 20px;
-    font-weight: 400;
-    margin-right: 20px;  
-    line-height: 30px;
-}
-.quattro-info h4 {
-    margin-bottom: 20px;
-}
-.quattro-info img {
-    margin-top: 15px;
-    width: 100%;
-}
-.garantia-info h6{
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.garantia-info p {
-    font-size: 18px;
-    font-weight: 400;
+#modal {
+    background-color: white;
+    padding: 20px 50px;
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+    display: block;
+    animation: fadeInModal 1s ease-in-out forwards;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
 }
 
-/* footer */
+#modal.closing{
+    animation: fadeOutModal 1s ease-in-out forwards;  
+}
+#error {
+    font-size: 25px;
+    font-weight: 700;
+}
+@keyframes fadeInModal{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transition: 0.3s ease ;
+    }
+}
+#header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    width: 100%;
+}
+#news-form {
+    display: flex;
+    flex-direction: column;
+}
+#x-button {
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+}
+.personal-info {
+    font-size: 20px;
+    margin-bottom: 30px ;
+    font-weight: 500;
+}
+#news-form {
+    margin-top: 20px;
+}
+#news-form input{
+    line-height: 30px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d0d3d4;
+}
+#dates-container {
+    margin-bottom: 15px;
+}
+.form-select {
+    height: 30px;
+    border: 1px solid #d0d3d4;
+    color: grey;
+    padding: 0 10px;
+}
+#subscribe-button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+#checkboxes p{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0
+}
+#checkboxes span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.white-arrow {
+    fill: #fff;
+    margin-left: 10px;
+    width: 12px;
+    height: 12px;
+}
+.faqs {
+    margin-top: 100px;
+    padding-bottom: 150px;
+}
+.faqs h2 {
+    margin-bottom: 20px;
+}
+.questions {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s all; 
+    font-size: 18px;
+    font-weight: 700;
+}
+.active, .accordion:hover {
+    background-color: #ccc; 
+    
+  } 
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
 .lower-footer-info {
     background-color: #474e5b;
     margin: 0 auto;
@@ -222,50 +328,35 @@ body {
     padding: 20px 50px;
     color: #fff;
 }
-@media screen and (max-width:1240px) { 
-    .cars-li-div  {
+@media screen and (max-width: 1240px) { 
+    .cars-li-div {
         display: none;
     }
-}
-@media screen and (max-width: 1000px){
-    .lower-footer > div {
-        padding: 20px
+    #header-div h1 {
+        font-size: 20px;
+    }
+    .personal-info {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 800px) {
-    .quattro-block {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .quattro-info {
-        margin-bottom: 50px;
-    }
-    .quattro-info img {
-        width: 280px;
-        height: 150px;
-    }
-    .garantia-info p {
-        max-width: 280px;
-    }
-    .garantia-info img {
-        width: 280px;
-    }
-}
-@media screen and (max-width: 660px) {
     .menu-li span {
-        margin-right: 0;
+         margin-right: 0;
+    }
+    #checkboxes p {
+        font-size: 12px;
+    }
+    #answer-checkbox span {
+        font-size: 12px;
+    }
+    #x-button {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width:448px) {
     .lower-footer {
         justify-content: center;
     }
-    .social-network-pages {
-        display: flex;
-        justify-content: center;
-    }
-    .social-network-pages a {
-        margin-right: 10px;
-    }
-}
+ }

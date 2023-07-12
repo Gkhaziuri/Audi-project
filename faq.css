@@ -105,11 +105,14 @@
     fill: #c03;
 }
 .logo-div img{
-    width: 300px;
+    width: 100px;
 }
 .rs-li a{
     display: flex;
     align-items: center;
+}
+.cars-li-div {
+    display: flex;
 }
 .red-arrow {
     width: 10px;
@@ -303,21 +306,6 @@
     flex-direction: column;
     position: relative;
 }
-.lower-footer-boxes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -50%;
-    height: 100%;
-    width: 1px;
-    background-color: rgb(155, 150, 150);
-}
-.last-footer-box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
 .social-network-pages {
     padding: 20px 50px;
     text-align: right;
@@ -339,3 +327,30 @@
     padding: 20px 50px;
     color: #fff;
 }
+@media screen and (max-width: 1240px) { 
+    .cars-li-div {
+        display: none;
+    }
+    #header-div h1 {
+        font-size: 20px;
+    }
+    .personal-info {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .menu-li span {
+         margin-right: 0;
+    }
+    #checkboxes p {
+        font-size: 12px;
+    }
+    #answer-checkbox span {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:448px) {
+    .lower-footer {
+        justify-content: center;
+    }
+ }

@@ -366,6 +366,9 @@ video {
     .heading-text p {
         font-size: 18px;
     }
+    .heading-text {
+        padding: 5px;
+    }
     .swiper-slide h3 {
         font-size: 22px;
         top: 10%;

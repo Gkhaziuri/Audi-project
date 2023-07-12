@@ -364,7 +364,12 @@ video {
     .s5-more-info-block p {
         font-size: 15px;
     }
-
+    .multimedia-gallery {
+        padding: 5px;
+    }
+    .heading-text {
+        padding: 15px;
+    }
 }
 @media screen and (max-width:448px) {
    .lower-footer {

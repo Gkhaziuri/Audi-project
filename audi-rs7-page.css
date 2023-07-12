@@ -328,6 +328,9 @@ video {
    .heading-text p {
        font-size: 15px;
    }
+   .heading-text {
+    padding: 15px;
+    }
    .swiper-slide h3 {
        font-size: 22px;
        top: 10%;
@@ -341,6 +344,12 @@ video {
     }
     .rs7-more-info-block p {
         font-size: 15px;
+    }
+    .other-options-boxes {
+        padding: 5px;
+    }
+    .multimedia-gallery {
+        padding: 5px;
     }
 }
 @media screen and (max-width:448px) {

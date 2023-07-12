@@ -101,7 +101,10 @@ body {
     fill: #c03;
 }
 .logo-div img{
-    width: 300px;
+    width: 100px;
+}
+.cars-li-div {
+    display: flex;
 }
 .rs-li a{
     display: flex;
@@ -193,21 +196,6 @@ body {
     flex-direction: column;
     position: relative;
 }
-.lower-footer-boxes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -50%;
-    height: 100%;
-    width: 1px;
-    background-color: rgb(155, 150, 150);
-}
-.last-footer-box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
 .social-network-pages {
     padding: 20px 50px;
     text-align: right;
@@ -228,4 +216,40 @@ body {
     justify-content: space-between;
     padding: 20px 50px;
     color: #fff;
+}
+@media screen and (max-width:1240px) { 
+    .cars-li-div  {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px){
+    .lower-footer > div {
+        padding: 20px
+    }
+}
+@media screen and (max-width: 800px) {
+    .ganvadeba-block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .ganvadeba-info {
+        margin-bottom: 50px;
+    }
+    .garantia-info p {
+        max-width: 280px;
+    }
+    .garantia-info img {
+        width: 280px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .menu-li span {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:448px) {
+    .lower-footer {
+        justify-content: center;
+    }
 }

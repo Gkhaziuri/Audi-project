@@ -107,7 +107,10 @@ body {
     fill: #c03;
 }
 .logo-div img{
-    width: 300px;
+    width: 100px;
+}
+.cars-li-div {
+    display: flex;
 }
 .rs-li a{
     display: flex;
@@ -196,6 +199,7 @@ footer {
     align-items: top;
     justify-content: space-between;
     margin-right: 50px;
+    flex-wrap: wrap;
 }
 .footer-rows a {
     display: flex;
@@ -245,21 +249,6 @@ footer {
     flex-direction: column;
     position: relative;
 }
-.lower-footer-boxes::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -50%;
-    height: 100%;
-    width: 1px;
-    background-color: rgb(155, 150, 150);
-}
-.last-footer-box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
 .social-network-pages {
     padding: 20px 50px;
     text-align: right;
@@ -280,4 +269,48 @@ footer {
     justify-content: space-between;
     padding: 20px 50px;
     color: #fff;
+}
+@media screen and (max-width:1240px) { 
+    .cars-li-div  {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px){
+    .lower-footer > div {
+        padding: 20px
+    }
+    .footer-rows div {
+        padding: 20px 40px;
+    } 
+    .footer-rows {
+        justify-content: space-between;
+        
+    }
+}
+@media screen and (max-width: 660px) {
+    .menu-li span {
+        margin-right: 0;
+    }
+    .models-div img {
+        width: 280px;
+    }
+    .other-options-boxes img{
+        width: 280px;
+    }
+    .other-options-boxes p {
+        font-size: 15px;
+        max-width: 280px;
+    }
+    .other-options-boxes h4 {
+        font-size: 18px;
+        max-width: 280px;
+    }
+    .footer-rows div {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width:448px) {
+    .lower-footer {
+        justify-content: center;
+    }
 }
