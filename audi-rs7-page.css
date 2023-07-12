@@ -186,6 +186,7 @@ video {
     margin-top: 50px;
     margin-bottom: 100px;
     max-width: 100%;
+    justify-content: center;
 }
 .rs7-more-info-block p {
     font-size: 18px;
